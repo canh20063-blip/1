@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIRAL CAROUSEL OS 2.0</title>
+    <meta name="description" content="Операционная система редакции вирусных Instagram-каруселей: 8-модульный пайплайн, арт-дирекшн, фактчекинг, предпросмотр 4:5 и экспорт слайдов." />
+    <meta property="og:title" content="VIRAL CAROUSEL OS 2.0" />
+    <meta property="og:description" content="Операционная система редакции вирусных Instagram-каруселей: 8-модульный пайплайн, арт-дирекшн, фактчекинг, предпросмотр 4:5 и экспорт слайдов." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+      // Suppress WebSocket and HMR connection errors in preview / iframe environments
+      (function() {
+        function shouldSuppress(err) {
+          if (!err) return false;
+          var msg = String(err.message || err.reason || err || '');
+          var stack = String(err.stack || '');
+          return (
+            msg.indexOf('WebSocket') !== -1 ||
+            msg.indexOf('vite:ws') !== -1 ||
+            stack.indexOf('@vite/client') !== -1 ||
+            stack.indexOf('client.mjs') !== -1 ||
+            msg.indexOf('failed to connect to websocket') !== -1 ||
+            msg.indexOf('closed without opened') !== -1
+          );
+        }
+
+        window.addEventListener(
+          'unhandledrejection',
+          function(event) {
+            if (shouldSuppress(event.reason)) {
+              event.preventDefault();
+              if (typeof event.stopImmediatePropagation === 'function') {
+                event.stopImmediatePropagation();
+              }
+            }
+          },
+          true
+        );
+
+        window.addEventListener(
+          'error',
+          function(event) {
+            if (shouldSuppress(event.error || event.message)) {
+              event.preventDefault();
+              if (typeof event.stopImmediatePropagation === 'function') {
+                event.stopImmediatePropagation();
+              }
+            }
+          },
+          true
+        );
+      })();
+    </script>
+  </head>
+  <body class="bg-neutral-950 text-neutral-100 antialiased selection:bg-rose-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

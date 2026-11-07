@@ -1,0 +1,6 @@
+{
+  "name": "VIRAL CAROUSEL OS 2.0",
+  "description": "Операционная система редакции вирусных Instagram-каруселей: 8-модульный пайплайн, арт-дирекшн, фактчекинг, предпросмотр 4:5 и экспорт слайдов.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
